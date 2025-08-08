@@ -9,7 +9,7 @@ const quotesShema = new mongoose.Schema({
         type: Date,
         default: () => new Date()
     },
-    user: {
+    created_by: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User', // Reference to your User model
         required: true

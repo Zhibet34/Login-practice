@@ -3,17 +3,20 @@ const todoRoute = express.Router();
 const Todo = require('../Template/toDo');
 
 todoRoute.get('/', async(req,res)=>{
+    const user = req.user.username
     const to_do_items = await Todo.find({});
-    res.send(to_do_items)
+    const object = {person: user, information: to_do_items}
+    res.send(object)
 });
 
 todoRoute.post('/', async(req,res)=>{
     const {item} = req.body;
     console.log(item)
     const user = req.user
+    console.log(user)
     const newEntry = new Todo({
         item: item,
-        created_by: user
+        created_by: req.user._id
     });
 
     await newEntry.save();

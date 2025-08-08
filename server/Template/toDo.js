@@ -12,7 +12,7 @@ const todoShema = new mongoose.Schema({
     created_by: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User', // Reference to your User model
-        required: true
+        require
       }
 });
 

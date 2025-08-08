@@ -14,6 +14,8 @@ const loginRoute = require('./routes/loginRoute');
 const authRoute = require('./routes/authRoute');
 const logoutRoute = require('./routes/logoutRoute');
 const todoRoute = require('./routes/todo_create_Route');
+const quoteRoute = require('./routes/quote-creat-route');
+const { default: viewRoute } = require('./routes/viewRoute');
 
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://127.0.0.1:27017/test-2')
     .then(()=>{
@@ -35,7 +37,9 @@ app.use('/register',registrationRoute)
 app.use('/login',loginRoute);
 app.use('/auth',authRoute);
 app.use('/logout',logoutRoute);
-app.use('/add', todoRoute)
+app.use('/add', todoRoute);
+app.use('/add-quote',quoteRoute);
+app.use('/quotelist',viewRoute)
 
 app.listen(3000,()=>{
     console.log('the server is live on 3000')
