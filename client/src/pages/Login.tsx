@@ -1,14 +1,13 @@
-import { useNavigate } from "react-router-dom";
 import Navbar from "../component/navbar";
-import '../App.css'
+import LoginForm from "../component/loginform";
 
 function Login(){
-    const navigate = useNavigate()
 
     return(
         <>
             <Navbar/>
             <h1>Login page</h1>
+            <LoginForm/>
         </>
     )
 };

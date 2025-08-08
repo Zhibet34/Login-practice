@@ -1,13 +1,13 @@
-import { useNavigate } from "react-router-dom";
 import Navbar from "../component/navbar";
+import Registration from "../component/registration";
 
 function Register(){
-    const navigate = useNavigate()
 
     return(
         <>
             <Navbar/>
-            <h1>registration page</h1>
+            <h1>sign in</h1>
+            <Registration/>
         </>
     )
 };

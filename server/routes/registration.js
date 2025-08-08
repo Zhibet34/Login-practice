@@ -1,6 +1,6 @@
 const express = require('express')
 const registrationRoute = express.Router();
-const User = require('./Template/user');
+const User = require('../Template/user');
 
 registrationRoute.post('/', async (req, res) => {
     try {

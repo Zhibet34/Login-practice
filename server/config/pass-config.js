@@ -6,14 +6,14 @@ module.exports = function(passport) {
   passport.use(
     new LocalStrategy(
       {
-        usernameField: 'email' // using email as username
+        usernameField: 'username' // using email as username
       },
-      async (email, password, done) => {
+      async (username, password, done) => {
         try {
-          const user = await User.findOne({ email });
+          const user = await User.findOne({ username });
           
           if (!user) {
-            return done(null, false, { message: 'Incorrect email.' });
+            return done(null, false, { message: 'Incorrect username.' });
           }
 
           // passport-local-mongoose provides authenticate method

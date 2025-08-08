@@ -1,13 +1,13 @@
-import { useNavigate } from "react-router-dom";
 import Navbar from "../component/navbar";
+import CreateNewPost from "../component/create";
 
 function Home(){
-    const navigate = useNavigate()
 
     return(
         <div>
             <Navbar/>
              <h1>homepage is located right here</h1>
+             <CreateNewPost/>
         </div>
     )
 }

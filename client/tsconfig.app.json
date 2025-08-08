@@ -19,9 +19,11 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedIndexedAccess": true,  // Recommended addition
+    "noUncheckedSideEffectImports": true,
+    "forceConsistentCasingInFileNames": true  // Recommended addition
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules"]  // Recommended addition
 }

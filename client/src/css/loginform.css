@@ -1,0 +1,15 @@
+.form{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.register-button-2{
+    background-color: #ff0000;
+    height: 30px;
+    border-radius: 8px;
+    width: 20%;
+}

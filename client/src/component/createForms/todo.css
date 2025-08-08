@@ -1,0 +1,13 @@
+.btn-container button {
+    width: 25%;
+    height: 100%;
+    background-color: cadetblue;
+    border-radius: 5px;
+    color: rgb(6, 6, 6);
+    font-size: large;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px rgb(247, 138, 138), -3px -3px rgb(247, 138, 138);
+}

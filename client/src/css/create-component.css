@@ -1,0 +1,56 @@
+.create-new-post-container {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end; /* Standard property value */
+    margin-left: auto; /* Pushes container to the right */
+    text-align: center;
+    margin-right: 2em;
+}
+
+.create-new-post-heading {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.create-new-post-heading:hover {
+    color: #0066cc;
+    background-color: #f0f0f0;
+}
+
+.create-new-post-message {
+    color: rgb(0, 76, 255);
+    margin-top: 2px;
+    font-size: 0.9rem;
+    text-align: center; /* Ensure message is centered */
+}
+
+.create-new-post-form-options {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    top: 100%;
+    margin-right: 2em;
+    right: 0; /* Align dropdown to right edge of container */
+    transform: translateX(10%); /* Center the dropdown relative to container */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    justify-content: center;
+    min-width: max-content; /* Prevent wrapping of options */
+}
+
+.create-new-post-form-option {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.create-new-post-form-option:hover {
+    background-color: #f0f0f0;
+}
